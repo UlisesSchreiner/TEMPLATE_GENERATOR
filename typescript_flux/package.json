@@ -1,0 +1,35 @@
+{
+  "name": "typescript_flux",
+  "version": "1.0.0",
+  "description": "typescriot template for flux middleend aplication",
+  "main": "index.ts",
+  "scripts": {
+    "test": "mocha",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "keywords": [
+    "typescript",
+    "flux",
+    "middleend"
+  ],
+  "author": "Ulises Schreiner",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.6",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express-validator": "^3.0.0",
+    "awilix": "^9.0.0",
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
+    "express-validator": "^7.0.1",
+    "local-configuration-manager": "^1.0.2"
+  }
+}
