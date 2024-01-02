@@ -19,7 +19,7 @@ export class DummyCongratsProvider {
 
   invoke() {
     let experimental = new uy.MobileViewStep();
-    experimental.id = "second_view_step";
+    experimental.id = "dummy_congrats_view_step";
     experimental.backGroundColor = "#FFFFFF";
     experimental.organizer = "scrolling";
     experimental.beforeAction = this.before 
