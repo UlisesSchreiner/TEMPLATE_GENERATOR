@@ -11,7 +11,7 @@ export class HomeDisclaimerProvider {
       return "Continue";
     },
     secondButtonLabel: (context: any) => {
-      return "Pokemones";
+      return "Dummy disclaimer";
     }, 
   };
 

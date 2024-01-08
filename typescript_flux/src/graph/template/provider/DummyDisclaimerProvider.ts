@@ -1,14 +1,14 @@
 import uy from "componentscontract";
-import { congratsBuilder, congratsBuilderInput } from "../Builder/CongratsBuilder";
+import { WithInputDisclaimerBuilder, WithInputDisclaimerBuilderInput } from "../Builder/WithInputDisclaimerBuilder";
 
-export class DummyCongratsProvider {
-  myInput: congratsBuilderInput = {
+export class DummyDisclaimerProvider {
+  myInput: WithInputDisclaimerBuilderInput = {
     titleLabel: (context: any) => {
-      return "This is a dummy congrats";
+      return "This is a dummy disclaimer";
     },
-    buttonLabel: (context: any) => {
-      return "OK"
-    },
+    firstButtonLabel: (context: any) => {
+      return "Continue"
+    }
   };
 
   async before (context: any) {
@@ -23,7 +23,7 @@ export class DummyCongratsProvider {
     experimental.backGroundColor = "#FFFFFF";
     experimental.organizer = "scrolling";
     experimental.beforeAction = this.before 
-    experimental.builderAction = congratsBuilder(this.myInput).execute;
+    experimental.builderAction = WithInputDisclaimerBuilder(this.myInput).execute;
 
     return experimental;
   }
